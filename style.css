@@ -417,6 +417,9 @@ margin-left: 16vw;
 #exampleProducts {
     padding-top: 12.5vw;
 }
+.exampleText{
+    font-size: 2.5vw;
+}
 .productsList{
     display: flex;
     flex-wrap: wrap;
