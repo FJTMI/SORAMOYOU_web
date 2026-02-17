@@ -483,3 +483,7 @@ footer {
     padding: 2.5vw;
     background-color: rgba(231, 232, 236, 0.589);
 }
+
+.footerText {
+    font-size: 1.8vw;
+}
