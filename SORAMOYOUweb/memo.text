@@ -1,0 +1,82 @@
+メイン画像
+<div id="observablehq-squareSORAMOYOU-85b19a2d"></div>
+<p>Credit: <a href="https://observablehq.com/d/80c37d7565d08293">空模様 生成 by fujitamai</a></p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/80c37d7565d08293.js?v=4";
+new Runtime().module(define, name => {
+  if (name === "squareSORAMOYOU") return new Inspector(document.querySelector("#observablehq-squareSORAMOYOU-85b19a2d"));
+  return ["viewof downloadButton"].includes(name);
+});
+</script>
+
+いつのかの文
+<div id="observablehq-whenThisSORAMOYOU-10f71f41"></div>
+<p>Credit: <a href="https://observablehq.com/d/80c37d7565d08293@1885">空模様 生成 by fujitamai</a></p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/80c37d7565d08293@1885.js?v=4";
+new Runtime().module(define, name => {
+  if (name === "whenThisSORAMOYOU") return new Inspector(document.querySelector("#observablehq-whenThisSORAMOYOU-10f71f41"));
+});
+</script>
+
+期間スライダー
+<div id="observablehq-viewof-rangeYear-37b5cff6"></div>
+<p>Credit: <a href="https://observablehq.com/d/80c37d7565d08293@1885">空模様 生成 by fujitamai</a></p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/80c37d7565d08293@1885.js?v=4";
+new Runtime().module(define, name => {
+  if (name === "viewof rangeYear") return new Inspector(document.querySelector("#observablehq-viewof-rangeYear-37b5cff6"));
+  return ["whenThisSORAMOYOU","viewof downloadButton","targetYears","squareSORAMOYOU"].includes(name);
+});
+</script>
+
+月
+<div id="observablehq-viewof-selectMonth-8e5e2c04"></div>
+<p>Credit: <a href="https://observablehq.com/d/80c37d7565d08293@1885">空模様 生成 by fujitamai</a></p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/80c37d7565d08293@1885.js?v=4";
+new Runtime().module(define, name => {
+  if (name === "viewof selectMonth") return new Inspector(document.querySelector("#observablehq-viewof-selectMonth-8e5e2c04"));
+  return ["viewof selectDay","viewof rangeYear","whenThisSORAMOYOU","mm","targetYears","dd","viewof downloadButton","githubCSV","squareSORAMOYOU","githubData"].includes(name);
+});
+</script>
+
+日
+<div id="observablehq-viewof-selectDay-96faea45"></div>
+<p>Credit: <a href="https://observablehq.com/d/80c37d7565d08293@1885">空模様 生成 by fujitamai</a></p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/80c37d7565d08293@1885.js?v=4";
+new Runtime().module(define, name => {
+  if (name === "viewof selectDay") return new Inspector(document.querySelector("#observablehq-viewof-selectDay-96faea45"));
+  return ["viewof rangeYear","whenThisSORAMOYOU","dd","targetYears","viewof downloadButton","githubCSV","squareSORAMOYOU","githubData"].includes(name);
+});
+</script>
+
+地域
+<div id="observablehq-viewof-placeSelect-97ea0d29"></div>
+<p>Credit: <a href="https://observablehq.com/d/80c37d7565d08293@1885">空模様 生成 by fujitamai</a></p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/80c37d7565d08293@1885.js?v=4";
+new Runtime().module(define, name => {
+  if (name === "viewof placeSelect") return new Inspector(document.querySelector("#observablehq-viewof-placeSelect-97ea0d29"));
+  return ["viewof downloadButton","githubCSV","githubData","squareSORAMOYOU"].includes(name);
+});
+</script>

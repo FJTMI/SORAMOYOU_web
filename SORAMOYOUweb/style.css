@@ -1,0 +1,482 @@
+html {
+  scroll-behavior: smooth;
+}
+body, button, input, select, textarea {
+  font-family: "iroha-26tubaki-stdn", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*読み込みすぐのオーバーレイ*/
+.welcome {
+    z-index: 1000;
+    position: fixed;
+    top: 8%;
+    bottom: auto;
+    left: 17%;
+    width: 69%;
+    height: 85%;
+    background-color: rgba(255, 255, 255, 0.9);
+    /*border: 1px solid black;*/
+    border-radius: 30px;
+     display: flex;           
+  flex-direction: column; 
+  align-items: center;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 5vw 4vw rgba(240, 240, 240, 0.9);
+  animation: fadeIn 0.7s ease-out forwards;
+
+}
+.welcome.close {
+display: none;
+}
+
+.welcomeTrigger {
+    z-index: 1500;
+    margin: 1vw 0 auto 0;
+    /*margin-bottom: auto;*/
+    padding: 0.75vw 1.75vw;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.5vw;
+    text-align: left;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.welcomeTrigger:hover {
+    /*background-color: rgba(243, 242, 242, 0.742);*/
+    box-shadow: 0 0 2.5vw 0.5vw rgb(210, 210, 210);
+}
+
+.welcomeDate {
+    margin: auto 0 0 0;
+    /*font-size: 1.7vw;*/
+}
+
+/*選択肢(メイントグルに移動)*/
+.changes {
+    display: flex;           
+  flex-direction: column; 
+  align-items: center;
+  width: 40vw;
+   /*max-height: 800px; /* 中身に合わせて十分な高さを指定 */
+  opacity: 1;
+}
+
+.welcomeText {
+    font-size: 1.5vw;
+    margin: 0.25vw;
+    align-self: flex-start;
+}
+
+.welcomeText.close{
+    display: none;
+}
+
+.selectItem {
+    padding: 3vw;
+    padding-top: 0;
+    width: 70%;
+}
+
+.changes form label {
+    /*margin: 0;*/
+    /*padding: 0;*/
+    width: 30%;
+    font-size: 1.4vw;
+
+}
+.changes form select {
+    width: 50%;
+    font-size: 1.3vw;
+    margin: 0;
+    padding-left: 1.3vw;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+}
+
+.month-day {
+   display: flex;
+   justify-content: center;
+   gap: 3vw;
+   margin-left: 2vw;
+    /*width: 50%;*/
+}
+.month-day div{
+    width: 10vw;
+    /*text-align: center;*/
+}
+.month-day form label{
+    /*width: 50%;*/
+    margin-left: 0.75vw;
+}
+.yearRange form{
+    display: flex;
+    justify-content: center;
+}
+
+.yearRange form div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.place form{
+    display: flex;
+    justify-content: center;
+}
+.place form label{
+    width:9vw;
+}
+
+
+
+/* ヘッダー */
+
+header {
+  position: fixed;    /* 画面に対して固定 */
+  top: 0;
+  left: 0;
+  width: 15vw;/*100*/
+  container-type: inline-size;
+  z-index: 100;
+  /* その他スタイルは上記と同じ */
+  margin: 2vw;
+  transition: all 0.5s ease;
+}
+
+header.scroll {
+    width: 10vw;
+}
+
+.header-logo {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    animation: fadeIn 1.2s ease-out 0.5s forwards;
+    opacity: 0;
+}
+
+.navi-links {
+    margin-top: 3vw;
+    padding-left: 10cqi;
+    width: 200%;
+    animation: fadeIn 1.2s ease-in-out 0.6s forwards;
+    opacity: 0;
+}
+
+header li {
+  list-style-type: none;    
+  margin-bottom: /*13cqi*/1.75vw;
+  font-size: /*8.5cqi*/1.4vw;
+  transition: all 0.2s ease;
+}
+
+header li.scroll {
+  font-size: /*11cqi*/1.9vw;
+  margin-left: 1vw;
+}
+
+a {
+  text-decoration: none; 
+  color: inherit;        
+}
+
+/* メインコンテンツ */
+
+main {
+    text-align: center;
+    width: 70vw;
+    /*max-width: 1000px;*/
+    margin: 0 auto;
+margin-left: 16vw;
+    
+}
+
+.cloud-line {
+    width: 100%;
+    height: auto;
+}
+
+.mirror{
+    transform: scaleX(-1);
+}
+
+#makeSORAMOYOU{
+    margin-top: 6vw;
+    margin-left: 2.5vw;
+    display: flex;           
+  flex-direction: column; 
+  align-items: center;
+}
+.main-image {
+    width: 90%;
+    height: auto;
+    margin: 0vw;
+    margin-bottom: 0;
+    overflow: visible;
+}
+
+.main-image.welClose{
+    animation: fadeIn 1.5s ease-in-out 0s forwards;
+}
+
+.main-image svg {
+  /*display: block;*/
+  width: 100% !important;
+  height: auto !important;
+  /*max-width: 100%;*/
+  /*春３４５box-shadow: 0 0vw 3vw 1vw rgba(255, 219, 241, 0.8);/*/
+  /*夏６７８box-shadow: 0 0 3vw 1vw rgba(203, 255, 246, 0.8);*/
+/*秋９１０１１box-shadow: 0 0 3vw 1vw rgba(255, 208, 195, 0.8);*/
+  /*冬１２１２box-shadow: 0 0 3vw 1.2vw rgba(217, 206, 242, 0.9);*/
+}
+
+.whenThisSORAMOYOU {
+    margin-top: 2vw;
+}
+.whenThisSORAMOYOU p{
+    margin: 0;
+    font-size: 1.7vw;
+}
+
+.changeList {
+    width: 45%;
+    margin-top: 5vw;
+    margin-bottom: -2vw;
+    padding: 1vw;
+    /*border: 1px solid black;*/
+    border-radius: 20px;
+    background-color: rgba(231, 232, 236, 0.589);
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 100;
+}
+.changeList.open{
+    width: 70%;
+    position: -webkit-sticky; /* Safari対応 */
+    position: sticky;
+    bottom: 1vw;
+}
+.changeDateBanner {
+    margin: 0;
+    margin-left: 2vw;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.4vw;
+    text-align: left;
+}
+
+.changeDate {
+    overflow: hidden;
+     max-height: 0;
+  /*opacity: 0;*/
+  /*pointer-events: none; /* 閉じている間はクリック不可に */
+  margin-top: 0;
+  margin-bottom: 0;
+  transition: all 0.5s ease-in; /* アニメーションの速度 */
+}
+
+.changeDate.open {
+    /*display: flex;           
+  flex-direction: column; 
+  align-items: center;*/
+   max-height: 800px; /* 中身に合わせて十分な高さを指定 */
+  opacity: 1;
+  margin: 1vw;
+}
+
+.changes.toggle{
+  width: auto;
+}
+
+.changes.toggle .selectItem{
+  padding: 2vw;
+}
+
+.changes.toggle .month-day {
+    display: flex;
+   /*justify-content: center;*/
+   gap:3vw;
+    /*width: 50%;*/
+}
+
+
+/* whatIsSORAMOYOU */
+.CatchPhrase {
+    padding-top: 8vw;
+    font-size: 2.6vw;
+    letter-spacing: 0.2em;
+    margin: 0;
+}
+
+.main-logo {
+    width: 60%;
+    height: auto;
+    margin: 6vw;
+    margin-bottom: 3vw;
+    opacity: 0;
+}
+.main-logo.scroll{
+    animation: fadeIn 2s ease-in-out 0s forwards;
+    opacity: 1;
+}
+
+.highlight-text {
+    font-size: 2vw;
+    line-height: 10vw;
+}
+
+.description {
+    font-size: 1.5vw;
+    line-height: 4.5vw;
+    margin: 0;
+}
+
+#howToLook {
+    padding-top: 12.5vw;
+}
+
+.howToLookImage {
+    width: 52.5vw;
+    height: auto;
+    margin-left: -2vw;
+}
+
+.listTitle {
+    font-size: 2.25vw;
+    margin-top: 15vw;
+    margin-left: 8vw;
+    text-align: left;
+}
+
+.patternList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5vw 7vw;
+    padding: 10vw;
+    padding-top: 2vw;
+    padding-bottom: 5vw;
+    
+    
+}
+
+.patternList div{
+    position: relative
+}
+
+.patternItem {
+    display: flex;
+    width: 18vw;
+    background-color: rgba(255, 255, 255, 0.589);
+    box-shadow: 0 0 1.5vw 1vw rgba(245, 245, 245, 0.9);
+    
+}
+
+.patternItem img {
+    width: 50%;
+    height: auto;
+}
+
+.patternItem p {
+    font-size: 2.8vw;
+    margin: 0;
+    margin-left: 1.5vw;
+    position: absolute;     /* 親要素（.list-item）の中を自由に動けるようにする */
+    bottom: -15%; 
+    /*left: 50%;*/
+    right: 0%;
+    text-align: end;         /* 下から10pxの位置 */
+}
+
+.etc{
+    font-size: 1.85vw;
+    position: absolute;     /* 親要素（.list-item）の中を自由に動けるようにする */
+    bottom: 0vw; 
+    left: 50%;
+    margin: 0;
+}
+
+/*製品イメージ*/
+
+#exampleProducts {
+    padding-top: 12.5vw;
+}
+.productsList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+    padding: 5vw;
+}
+.productItem {
+    width: 17vw;        /* 揃えたい横幅 */
+  height: 20vw;       /* 揃えたい高さ */
+  overflow: hidden;
+}
+
+.productItem img {
+  width: 100%;         /* 親の幅いっぱいに広げる */
+  height: 100%;        /* 親の高さいっぱいに広げる */
+  object-fit: cover;
+  object-position: center top; 
+}
+
+.productItem img.umbrella {
+    object-position: 40% 10%;
+}
+
+.productItem img.mug {
+    object-position: 57% 10%;
+    transform: scale(1.1);
+}
+
+.productItem img.keychain {
+    object-fit: contain;
+    object-position: 57% 55%;
+    scale: 1.5;
+    rotate: 15deg;
+}
+
+.productItem img.pen {
+    object-fit: contain;
+    object-position: 57% 40%;
+    scale: 1.5;
+    rotate: 10deg;
+}
+
+.productItem img.curtain {
+    object-fit: contain;
+    scale: 1.7;
+    object-position: 57% 50%;
+}
+
+.andMore {
+    font-size: 1.7vw;
+    margin: 0;
+    margin-top: 2vw;
+    margin-bottom: 5vw;
+    
+}
+
+footer {
+    margin: 0;
+    margin-top: 10vw;
+    padding: 2.5vw;
+    background-color: rgba(231, 232, 236, 0.589);
+}

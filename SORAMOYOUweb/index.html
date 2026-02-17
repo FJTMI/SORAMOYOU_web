@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SORAMOYOU demo site</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+  <script>
+  (function(d) {
+    var config = {
+      kitId: 'iqs6qfy',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+</head>
+<body>
+
+    <div class="welcome">
+        <div class="welcomeDate">
+            <div class="changes">
+            <p class="welcomeText">日付を選択</p>
+            <div class="month-day selectItem">
+                <div id="observablehq-viewof-selectMonth-8e5e2c04"></div>
+                <div id="observablehq-viewof-selectDay-96faea45"></div>
+            </div>
+            <p class="welcomeText">期間を選択</p>
+            <div id="observablehq-viewof-rangeYear-37b5cff6" class="yearRange selectItem"></div>
+            <p class="welcomeText">地域を選択</p>
+            <div id="observablehq-viewof-placeSelect-97ea0d29" class="place selectItem"></div>
+            </div>
+        </div>
+        <p class="welcomeTrigger">決定</p>
+    </div>
+
+  <header>
+    <a href="#makeSORAMOYOU"><img class = "header-logo" src="img/blackFill.png" alt="SORAMOYOU Logo" /></a>
+    <ul class="navi-links">
+        <li class="navi1"><a href="#whatIsSORAMOYOU">▶︎ "空もよう"とは</a></li>
+        <li class="navi2"><a href="#howToLook">▶︎ "空もよう"の見方</a></li>
+        <li class="navi3"><a href="#exampleProducts">▶︎ 製品イメージ</a></li>
+      </ul>
+  </header>
+
+   <!-- メイン -->
+  <main>
+    <section id="makeSORAMOYOU">
+        <div id="observablehq-squareSORAMOYOU-85b19a2d" class="main-image"></div>
+        <!--<img class="main-image" src="img/kariA4.png" alt="A4SORAMOYOU" />-->
+        <div id="observablehq-whenThisSORAMOYOU-10f71f41" class="whenThisSORAMOYOU"></div>
+        <div class="changeList"><p class="changeDateBanner">＞ 日付を変える</p>
+        <div class="changeDate">
+            <!--<div id="observablehq-viewof-rangeYear-37b5cff6" class="selectItem"></div>
+            <div class="month-day selectItem">
+                <div id="observablehq-viewof-selectMonth-8e5e2c04"></div>
+                <div id="observablehq-viewof-selectDay-96faea45"></div>
+            </div>
+            <div id="observablehq-viewof-placeSelect-97ea0d29" class="place selectItem"></div>-->
+        </div>
+    </div>
+    </section>
+
+    <!-- 雲のライン画像 -->
+    <img class="cloud-line" src="img/line.svg" alt="Cloud Line" />
+
+    <section id="whatIsSORAMOYOU" class="links" data-navi = ".navi1">
+      <p class="CatchPhrase">あの日から積み重ねた空を、形に。</p>
+      <img class = "main-logo" src="img/blackFill.png" alt="SORAMOYOU Logo" />
+      <p class="description"><span class="highlight-text">“空もよう” とは、</span> <br>過去の気象データをもとに天気を可視化し、<br>
+        特定の日付の空を一年ずつ並べて一枚の柄にしたものです。
+        <br>大切な日付の ”空もよう” を作ってみませんか？</p>
+    </section>
+
+    <!-- 雲のライン画像 -->
+    <img class="cloud-line mirror" src="img/line.svg" alt="Cloud Line" />
+
+    <section id="howToLook" class="links"data-navi = ".navi2">
+        <img class="howToLookImage" src="img/sampleImg.png" alt="How to look" />
+        <p class="listTitle">天気の柄一覧</p>
+        <div class="patternList">
+            <div class="patternItem">
+                <img src="img/whetherPatterns/Rain.png" alt="Rain" />
+                <p>雨</p>
+            </div>
+            <div class="patternItem">
+                <img src="img/whetherPatterns/mistRain.png" alt="mistRain" />
+                <p>霧雨</p>
+            </div>
+            <div class="patternItem">
+                <img src="img/whetherPatterns/mist.png" alt="mist" />
+                <p>霧</p>
+            </div>
+             <div class="patternItem">
+                <img src="img/whetherPatterns/mizore.png" alt="mizore" />
+                <p>みぞれ</p>
+            </div>
+             <div class="patternItem">
+                <img src="img/whetherPatterns/Snow.png" alt="Snow" />
+                <p>雪</p>
+            </div>
+             <div class="patternItem">
+                <img src="img/whetherPatterns/arare.png" alt="arare" />
+                <p>あられ</p>
+            </div>
+            <div class="patternItem">
+                <img src="img/whetherPatterns/Thunder.png" alt="Thunder" />
+                <p>雷</p>
+            </div>
+            <div>
+                <p class="etc">etc...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 雲のライン画像 -->
+    <img class="cloud-line" src="img/line.svg" alt="Cloud Line" />
+
+    <section id="exampleProducts" class="links"data-navi = ".navi3">
+      <h2>こんなものが作れます</h2>
+      <!--<p>※画像はイメージです。</p>-->
+      <div class="productsList">
+        <div class="productItem">
+            <img src="img/productsImg/toteBag.png" alt="Tote Bag" />
+        </div>
+        <div class="productItem">
+            <img class="umbrella" src="img/productsImg/umbrella.png" alt="Umbrella" />
+        </div>
+         <div class="productItem">
+            <img class="mug" src="img/productsImg/mug.png" alt="Mug" />
+        </div>
+         <div class="productItem">
+            <img class="keychain" src="img/productsImg/keychain2.png" alt="Keychain" />
+        </div>
+         <div class="productItem">
+            <img class="pen" src="img/productsImg/pen2.png" alt="Pen" />
+        </div>
+         <div class="productItem">
+            <img class="curtain" src="img/productsImg/curtain2.png" alt="Curtain" />
+        </div>
+      </div>
+      <p class="andMore">and more...→</p>
+    </section>
+
+
+    </main>
+    <footer>
+        <p class="footerText">空模様イメージサイト</p>
+    </footer>
+
+<script src="script.js"></script>
+<script src="observableScript.js" type="module"></script>
+</body>
+</html>
