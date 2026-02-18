@@ -311,6 +311,10 @@ margin-left: 16vw;
   padding: 2vw;
 }
 
+.changes.toggle .month-day{
+  width: 10vw;
+}
+
 
 
 
