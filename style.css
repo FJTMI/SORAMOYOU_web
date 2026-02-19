@@ -328,10 +328,6 @@ margin-left: 16vw;
   justify-content: center;
 }
 
-.changes.toggle{
-  /*width: auto;*/
-}
-
 .changes.toggle .selectItem{
   padding: 2vw;
 }
