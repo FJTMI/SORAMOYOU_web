@@ -46,6 +46,7 @@
     font-size: 16px;
     /*margin-left: 15px;*/
     flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .changes form {
@@ -71,6 +72,8 @@ flex-shrink: 0;
    gap: 5vw;
    /*margin-left: 20%;*?
     /*width: 50%;*/
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .month-day div{
@@ -80,9 +83,9 @@ flex-shrink: 0;
 
 .month-day form{
     width:100%;
-    /*display: flex;
+    flex-direction: row!important;
     align-items: center; /* 上下中央揃え */
-    /*white-space: nowrap; /* ラベルとセレクトボックスを絶対に改行させない */
+    white-space: nowrap!important; /* ラベルとセレクトボックスを絶対に改行させない */
     gap: 5px;
 }
 

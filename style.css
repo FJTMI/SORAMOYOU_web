@@ -97,10 +97,13 @@ display: none;
     /*padding: 0;*/
     width: 20%;
     font-size: 1.4vw;
-
 }
+.changes form{
+    width: 100%;
+}
+
 .changes form select {
-    width: 50%;
+    width: 100%;
     font-size: 1.3vw;
     margin: 0;
     padding-left: 1.5vw;
@@ -120,7 +123,7 @@ display: none;
    display: flex;
    justify-content: center;
    flex-direction: row;
-   gap: 3vw;
+   gap: 5vw;
    margin-left: 2vw;
     /*width: 50%;*/
 }
@@ -131,7 +134,20 @@ display: none;
 .month-day form label{
     /*width: 50%;*/
     margin-left: 0.75vw;
+    display: none;
 }
+.monthDayLabel{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.monthDayLabel div{
+    width: 70%;
+}
+.monthDayLabel p{
+    margin: 0;
+}
+
 .yearRange form{
     display: flex;
     justify-content: center;
@@ -143,6 +159,9 @@ display: none;
     text-align: center;
 }
 
+.place{
+    width: 25vw;
+}
 
 .place form{
     display: flex;
