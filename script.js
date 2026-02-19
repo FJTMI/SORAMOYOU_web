@@ -1,14 +1,17 @@
 const headerLogo = document.querySelector('header');
 const homeSection = document.querySelector('#makeSORAMOYOU');
+const topTrigger =document.querySelector('.topTrigger');
 
 //スクロールでヘッダーロゴサイズ変える
 new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (!entry.isIntersecting) {
       headerLogo.classList.add('scroll');
+      topTrigger.classList.add('scroll');
     } else {
       // 1番上の要素が少しでも見えたら（トップに戻ったら）クラスを外す
       headerLogo.classList.remove('scroll');
+      topTrigger.classList.remove('scroll');
     }
     });
   }, {threshold: 0.2})

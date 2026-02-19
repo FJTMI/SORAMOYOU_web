@@ -42,6 +42,11 @@ body, button, input, select, textarea {
 display: none;
 }
 
+.welcomeMemo{
+    margin: 0;
+    font-size: 1.2vw;
+}
+
 .welcomeTrigger {
     z-index: 1500;
     margin: 1vw 0 auto 0;
@@ -96,7 +101,7 @@ display: none;
 .changes form label {
     /*margin: 0;*/
     /*padding: 0;*/
-    width: 30%;
+    width: 20%;
     font-size: 1.4vw;
 
 }
@@ -197,6 +202,27 @@ header li.scroll {
 a {
   text-decoration: none; 
   color: inherit;        
+}
+
+.topTrigger {
+    display: none;
+  position: fixed;    /* 画面に対して固定 */
+  bottom: 1.5vw;
+  right: 2.5vw;
+  width: 4vw;/*100*/
+  container-type: inline-size;
+  z-index: 100;
+  /* その他スタイルは上記と同じ */
+}
+
+.topTrigger.scroll{
+    display: block;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.topTrigger img{
+    width: 100%;
+    height: auto;
 }
 
 /* メインコンテンツ */
