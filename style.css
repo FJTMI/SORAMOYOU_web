@@ -119,6 +119,7 @@ display: none;
 .month-day {
    display: flex;
    justify-content: center;
+   flex-direction: row;
    gap: 3vw;
    margin-left: 2vw;
     /*width: 50%;*/
