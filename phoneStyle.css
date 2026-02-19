@@ -1,0 +1,85 @@
+@media screen and (max-width: 767px) {
+    .welcome {
+    top: 1%;
+    left: 1%;
+    width: 98%;
+    height: 98%;
+}
+
+
+.welcomeMemo{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.welcomeTrigger {
+    /*margin-bottom: auto;*/
+    padding: 7px 20px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 19px;
+    text-align: left;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 0 2vw 0.25vw rgba(210, 210, 210, 0.473);
+}
+
+.changes {
+  width: 70vw;
+   /*max-height: 800px; /* 中身に合わせて十分な高さを指定 */
+}
+
+.welcomeText {
+    font-size: 15px;
+    margin: 2vw;
+}
+
+.selectItem {
+    padding: 20px;
+    padding-top: 0;
+    width: 80%;
+}
+
+.changes form label {
+    width: 20%;
+    font-size: 16px;
+}
+
+.changes form {
+    margin-top: 5%;
+}
+
+.changes form select {
+    width: 70%;
+    font-size: 16px;
+    margin: 0;
+    padding-left: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    border: 0.1vw solid rgb(170, 170, 170);
+    box-shadow: 0vw 0vw 1vw 0.1vw rgba(210, 210, 210, 0.465);
+}
+
+.month-day {
+   gap: 3vw;
+   margin-left: 10%;
+    /*width: 50%;*/
+}
+
+.month-day div{
+    width: 100px;
+    /*text-align: center;*/
+}
+
+.month-day form{
+    width:80%;
+}
+
+.place{
+    width: 70%;
+}
+
+
+
+}

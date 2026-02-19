@@ -149,6 +149,7 @@ display: none;
 }
 .place form label{
     width:9vw;
+    display: none;
 }
 
 
@@ -336,6 +337,10 @@ margin-left: 16vw;
   width: 10vw;
 }
 
+.changes.toggle .place form label{
+    display: block;
+}
+
 
 
 
@@ -510,3 +515,5 @@ footer {
 .footerText {
     font-size: 1.8vw;
 }
+
+
