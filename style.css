@@ -22,11 +22,11 @@ body, button, input, select, textarea {
 .welcome {
     z-index: 1000;
     position: fixed;
-    top: 8%;
-    bottom: auto;
+    top: 3vw;
+    bottom: 4vw;
     left: 17%;
     width: 69%;
-    height: 85%;
+    height: 90%;
     background-color: rgba(255, 255, 255, 0.9);
     /*border: 1px solid black;*/
     border-radius: 30px;
@@ -68,9 +68,20 @@ display: none;
 }
 
 .welcomeDate {
-    margin: auto 0 0 0;
-    /*font-size: 1.7vw;*/
+    margin: auto auto 0 auto;
+    /*width: 50vw;*/
 }
+
+.welcomeAbout{
+    /*display: none;*/
+    font-size: 1.2vw;
+    margin: 0;
+    margin-bottom: 2vw;
+}
+.welcomeAboutBR{
+    display: none;
+}
+
 
 /*選択肢(メイントグルに移動)*/
 .changes {
@@ -114,7 +125,7 @@ display: none;
 }
 
 .selectItem {
-    padding: 3vw;
+    padding: 4vh;
     padding-top: 0;
     width: 70%;
 }
@@ -138,6 +149,7 @@ display: none;
 .monthDayLabel{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
 }
 .monthDayLabel div{
