@@ -42,6 +42,10 @@ body, button, input, select, textarea {
 display: none;
 }
 
+.welcome.offline {
+display: none;
+}
+
 .welcomeMemo{
     margin: 0;
     font-size: 1.2vw;
@@ -307,12 +311,47 @@ margin-left: 16vw;
   /*冬１２１２box-shadow: 0 0 3vw 1.2vw rgba(217, 206, 242, 0.9);*/
 }
 
+<<<<<<< HEAD
+.main-image.offline{
+    display: none;
+}
+
+=======
+>>>>>>> 30461e7c05c7b3e19ca2f3ef9a703df0483a3956
+.offImg{
+    display: none;
+}
+
+.offImg.offline{
+    display: flex;
+}
+
 .whenThisSORAMOYOU {
     margin-top: 2vw;
 }
 .whenThisSORAMOYOU p{
     margin: 0;
     font-size: 1.7vw;
+}
+
+<<<<<<< HEAD
+.whenThisSORAMOYOU.offline {
+    display: none;
+}
+
+=======
+>>>>>>> 30461e7c05c7b3e19ca2f3ef9a703df0483a3956
+.offText{
+    display: none;
+}
+
+.offText.offline{
+    margin: 0;
+<<<<<<< HEAD
+    margin-top: 3vw;
+=======
+>>>>>>> 30461e7c05c7b3e19ca2f3ef9a703df0483a3956
+    display: flex;
 }
 
 .changeList {
@@ -332,6 +371,9 @@ margin-left: 16vw;
     position: -webkit-sticky; /* Safari対応 */
     position: sticky;
     bottom: 1vw;
+}
+.changeList.offline{
+    display: none;
 }
 .changeDateBanner {
     margin: 0;
