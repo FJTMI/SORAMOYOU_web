@@ -85,41 +85,27 @@ window.addEventListener('click', (e) => {
 //オフライン時
 const offImg = document.querySelector('.offImg');
 const offText = document.querySelector('.offText');
-
-<<<<<<< HEAD
-
-//オフライン時
-const offImg = document.querySelector('.offImg');
-const offText = document.querySelector('.offText');
 const mainImg = document.querySelector('.main-image');
 const whenText = document.querySelector('.whenThisSORAMOYOU');
 
-=======
->>>>>>> 30461e7c05c7b3e19ca2f3ef9a703df0483a3956
 function updateOnlineStatus() {
   if (navigator.onLine) {
     //banner.classList.add('hidden'); // オンラインなら隠す
     offImg.classList.remove('offline'); 
     offText.classList.remove('offline'); 
-<<<<<<< HEAD
     mainImg.classList.remove('offline'); 
     whenText.classList.remove('offline'); 
     welcome.classList.remove('offline'); 
     changeList.classList.remove('offline'); 
-=======
->>>>>>> 30461e7c05c7b3e19ca2f3ef9a703df0483a3956
     console.log("オン")
   } else {
     //banner.classList.remove('hidden'); // オフラインなら表示
     offImg.classList.add('offline'); 
     offText.classList.add('offline'); 
-<<<<<<< HEAD
     mainImg.classList.add('offline'); 
     whenText.classList.add('offline'); 
     welcome.classList.add('offline'); 
     changeList.classList.add('offline'); 
-=======
->>>>>>> 30461e7c05c7b3e19ca2f3ef9a703df0483a3956
     console.log("オフ")
   }
 }

@@ -137,7 +137,7 @@ header.scroll {
     display: flex;
     /*margin-top: 3vw;
     padding-left: 10cqi;*/
-    width: 1000%;
+    /*width: 1000%;
     animation: fadeIn 1.2s ease-in-out 0.6s forwards;
     opacity: 0;*/
 }
