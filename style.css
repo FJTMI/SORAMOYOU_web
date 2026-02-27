@@ -307,12 +307,29 @@ margin-left: 16vw;
   /*冬１２１２box-shadow: 0 0 3vw 1.2vw rgba(217, 206, 242, 0.9);*/
 }
 
+.offImg{
+    display: none;
+}
+
+.offImg.offline{
+    display: flex;
+}
+
 .whenThisSORAMOYOU {
     margin-top: 2vw;
 }
 .whenThisSORAMOYOU p{
     margin: 0;
     font-size: 1.7vw;
+}
+
+.offText{
+    display: none;
+}
+
+.offText.offline{
+    margin: 0;
+    display: flex;
 }
 
 .changeList {

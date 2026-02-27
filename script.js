@@ -74,4 +74,27 @@ triggers.addEventListener('click', () => {
   });
 
 
+//オフライン時
+const offImg = document.querySelector('.offImg');
+const offText = document.querySelector('.offText');
 
+function updateOnlineStatus() {
+  if (navigator.onLine) {
+    //banner.classList.add('hidden'); // オンラインなら隠す
+    offImg.classList.remove('offline'); 
+    offText.classList.remove('offline'); 
+    console.log("オン")
+  } else {
+    //banner.classList.remove('hidden'); // オフラインなら表示
+    offImg.classList.add('offline'); 
+    offText.classList.add('offline'); 
+    console.log("オフ")
+  }
+}
+
+// 状態が変わった瞬間に実行されるようにイベントを登録
+window.addEventListener('online',  updateOnlineStatus);
+window.addEventListener('offline', updateOnlineStatus);
+
+// ページを開いた瞬間にも一度チェック
+updateOnlineStatus();
