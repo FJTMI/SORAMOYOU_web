@@ -339,10 +339,16 @@ margin-left: 16vw;
     display: none;
 }
 
+.offHilightText{
+    font-size: 2vw;
+    color: rgb(186, 22, 68);
+}
+
 .offText.offline{
+    font-size: 1.7vw;
     margin: 0;
-    margin-top: 3vw;
-    display: flex;
+    margin-bottom: 2.5vw;
+    display: block;
 }
 
 .changeList {

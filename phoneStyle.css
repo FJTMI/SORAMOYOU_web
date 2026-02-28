@@ -116,33 +116,53 @@ flex-shrink: 0;
 /*ヘッダー*/
 header {
     display: flex;
-  /*position:absolute;*/
-  top: 1vh;
+  position:static;
+  top: 3vw;
   left: 3vw;
-  width: 27vw;
+  width: 90vw;
   /*container-type: inline-size;
   z-index: 100;
   /* その他スタイルは上記と同じ */
-  /*margin: 2vw;
+  margin-bottom:0;
   transition: all 0.5s ease;*/
 }
 
 header.scroll {
-    width: 23vw;
+    width: 90vw;
 }
 
-
+header a{
+    width: 25vw;
+}
 
 .navi-links {
     display: flex;
-    /*margin-top: 3vw;
-    padding-left: 10cqi;*/
-    /*width: 1000%;
-    animation: fadeIn 1.2s ease-in-out 0.6s forwards;
+    margin: 0;
+    margin-left: 5vw;
+    padding-left: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    /*animation: fadeIn 1.2s ease-in-out 0.6s forwards;
     opacity: 0;*/
 }
 
+.navi-links li{
+    font-size: 2.3vw;
+}
 
+main {
+    text-align: center;
+    width: 95vw;
+    /*max-width: 1000px;*/
+    margin: 0 auto;
+margin-left: auto;
+    
+}
+
+#makeSORAMOYOU{
+    margin-left: 0vw;
+}
 
 
 
