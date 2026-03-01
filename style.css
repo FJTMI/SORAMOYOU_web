@@ -502,7 +502,7 @@ margin-left: 16vw;
     margin: 0;
     margin-left: 1.5vw;
     position: absolute;     /* 親要素（.list-item）の中を自由に動けるようにする */
-    bottom: -15%; 
+    bottom: -0.25em; 
     /*left: 50%;*/
     right: 0%;
     text-align: end;         /* 下から10pxの位置 */

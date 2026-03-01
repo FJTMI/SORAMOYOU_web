@@ -4,8 +4,20 @@
     left: 2vw;
     width: 96vw;
     height: 88vh;
-     padding: 5vh 0 5vh 0;*/
+     padding: 5vh 0 5vh 0;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 
 .welcomeMemo{
@@ -49,6 +61,7 @@
 .changes {
   width: 80vw;
   overflow-y: auto;
+  overflow-x: hidden;
    /*max-height: 800px; /* 中身に合わせて十分な高さを指定 */
 }
 
@@ -120,7 +133,8 @@ header {
   /*container-type: inline-size;
   z-index: 100;
   /* その他スタイルは上記と同じ */
-  margin-bottom:0;
+  margin-bottom:10vw;
+  margin-top: 5vw;
   transition: all 0.5s ease;*/
 }
 
@@ -159,6 +173,31 @@ margin-left: auto;
 
 #makeSORAMOYOU{
     margin-left: 0vw;
+}
+
+.whenThisSORAMOYOU p{
+    padding: 5vw;
+    font-size: 4.8vw;
+    line-height: 2;
+}
+
+.changeList {
+    width: 65%;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    /*padding: 1vw;*/
+    /*border-radius: 20px;*/
+    overflow: auto;
+}
+.changeList.open{
+    width: 90%;
+    bottom: 1vw;
+}
+
+.changeDateBanner {
+    margin-left: 4vw;
+    font-size: 3.75vw;
+    padding: 1.5vw;
 }
 
 /* whatIsSORAMOYOU */
