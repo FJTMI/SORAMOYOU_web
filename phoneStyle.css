@@ -140,34 +140,52 @@ flex-shrink: 0;
 header {
     display: flex;
   position:sticky;
-  top: 2vw;
-  left: 3vw;
-  width: 90vw;
+  top: 1vw;
+  left: 0;
+  width: 100%;
   /*container-type: inline-size;*/
   z-index: 200;
   /* その他スタイルは上記と同じ */
-  margin-bottom:10vw;
-  margin-top: 5vw;
+  margin: 0;
+  margin-bottom:5vw;
   transition: all 0.5s ease;
-  background-color: rgb(255, 255, 255 ,0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(5px);
   border-radius: 5px;
+  align-items: center;
 }
 
-header.phoneScroll{
+/*header.phoneScroll{
     box-shadow: 0 0 5px 5px #f3f3f3;
+}*/
+
+header div{
+    display: flex;
 }
 
-header.scroll {
-    width: 90vw;
+header.scroll{
+    width: 100%;
+}
+
+header.scroll .header-logo{
+    width: 80%;
 }
 
 header a{
     width: 25vw;
 }
 
+header li.phoneNavi{
+  display: block;
+}
+
+header li{
+  display: none;
+}
+
+
 .navi-links {
-    display: flex;
+    /*display: flex;*/
     margin: 0;
     margin-left: 5vw;
     padding-left: 0;
@@ -180,6 +198,18 @@ header a{
 
 .navi-links li{
     font-size: 2.3vw;
+}
+
+header li.scroll {
+  display: block;
+  font-size: /*11cqi*/3.4vw;
+  margin-left: 0;
+}
+
+.topTrigger {
+  bottom: 1.5vw;
+  right: 2.5vw;
+  width: 9vw;/*100*/
 }
 
 main {
@@ -195,9 +225,13 @@ margin-left: auto;
     margin-left: 0vw;
 }
 
+.main-image{
+    width: 97%;
+}
+
 .whenThisSORAMOYOU p{
     padding: 5vw;
-    font-size: 4.8vw;
+    font-size: 4.4vw;
     line-height: 2;
 }
 
@@ -304,6 +338,50 @@ margin-left: auto;
     font-size: 4vw;
     margin-top: 5vw;
     margin-bottom: 20vw;   
+}
+
+
+
+footer {
+    padding: 5vw;
+}
+
+
+.footerText {
+    font-size: 3vw;
+    margin-bottom: 0.5vw;
+}
+
+footer div{
+    flex-direction: column;
+    margin-bottom: 1.5vw;
+}
+
+footer p{
+    margin: 0vw;
+}
+
+.footerNavi {
+    padding: 0;
+    padding-left: 0vw;
+}
+
+.footerNavi li {
+  font-size: /*8.5cqi*/2vw;
+}
+
+.credits p{
+    font-size: 2vw;
+}
+
+.credits a{
+    font-size: 2vw;
+}
+
+.copy{
+    display: block;
+    padding-top: 0.5vw;
+    font-size: 2vw;
 }
 
 

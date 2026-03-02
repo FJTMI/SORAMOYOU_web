@@ -219,6 +219,7 @@ header.scroll {
     margin: 0px;
     animation: fadeIn 1.2s ease-out 0.5s forwards;
     opacity: 0;
+    transition: all 0.5s ease;
 }
 
 .navi-links {
@@ -582,12 +583,54 @@ margin-left: 16vw;
 footer {
     margin: 0;
     margin-top: 10vw;
-    padding: 2.5vw;
+    padding: 2vw;
     background-color: rgba(231, 232, 236, 0.589);
 }
 
 .footerText {
-    font-size: 1.8vw;
+    font-size: 1.4vw;
 }
+
+footer div{
+    display: flex;
+}
+
+footer p{
+    margin: 0.5vw;
+}
+
+.footerNavi {
+    margin: 0vw;
+    padding-left: 4vw;
+    display: flex;
+    align-items: center;
+}
+
+.footerNavi li {
+  list-style-type: none;  
+  font-size: /*8.5cqi*/1vw;
+}
+
+.footerNavi li:not(:last-child)::after {
+  content: "/";        /* スラッシュを入れる */
+  margin: 0 8px;   /* スラッシュの左側の余白 */
+}
+
+.credits p{
+    margin-right:3vw;
+    font-size: 1.1vw;
+}
+
+.credits a{
+    font-size: 1.2vw;
+}
+
+.copy{
+    display: block;
+    padding-top: 0.5vw;
+    font-size: 1.2vw;
+}
+
+
 
 
