@@ -40,8 +40,8 @@
     margin-top: auto;
     text-align:left;
 }
-.welcomeAboutBR{
-    /*display: block;*/
+.phoneBR{
+    display: inline;
 }
 
 .welcomeTrigger {
@@ -116,26 +116,46 @@ flex-shrink: 0;
     flex-direction: row!important;
     align-items: center; /* 上下中央揃え */
     white-space: nowrap!important; /* ラベルとセレクトボックスを絶対に改行させない */
-    gap: 5px;
+    gap: 7px;
 }
 
 .place{
     width: 70%;
 }
+.place form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.place label{
+    align-self: center !important;
+    text-align: center;
+    margin: 0;
+    width: 100vh;
+}
 
 /*ヘッダー*/
 header {
     display: flex;
-  position:static;
-  top: 3vw;
+  position:sticky;
+  top: 2vw;
   left: 3vw;
   width: 90vw;
-  /*container-type: inline-size;
-  z-index: 100;
+  /*container-type: inline-size;*/
+  z-index: 200;
   /* その他スタイルは上記と同じ */
   margin-bottom:10vw;
   margin-top: 5vw;
-  transition: all 0.5s ease;*/
+  transition: all 0.5s ease;
+  background-color: rgb(255, 255, 255 ,0.8);
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+}
+
+header.phoneScroll{
+    box-shadow: 0 0 5px 5px #f3f3f3;
 }
 
 header.scroll {
@@ -202,21 +222,88 @@ margin-left: auto;
 
 /* whatIsSORAMOYOU */
 .CatchPhrase {
-    padding-top: 15vw;
-    font-size: 4vw;
-    letter-spacing: 0.2em;
-    margin-bottom: 4vw;
+    padding-top: 25vw;
+    font-size: 5.3vw;
+    letter-spacing: 0.1em;
+    margin-bottom: 10vw;
+}
+
+.main-logo {
+    width: 70%;
+    margin-bottom: 6vw;
 }
 
 .highlight-text {
-    font-size: 3.5vw;
-    line-height: 20vw;
+    font-size: 5vw;
+    line-height: 28vw;
 }
 
 .description {
-    font-size: 2.5vw;
-    line-height: 8vw;
-    margin-top: 2vw;
+    font-size: 3.8vw;
+    line-height: 11vw;
+    margin-top: 0vw;
+    margin-bottom: 10vw;
+}
+
+
+#howToLook {
+    padding-top: 30vw;
+}
+
+.howToLookImage {
+    width: 90vw;
+    height: auto;
+    margin-left: -2vw;
+}
+
+.listTitle {
+    font-size: 4.75vw;
+    margin-top: 30vw;
+    margin-left: 0vw;
+    text-align: center;
+}
+
+.patternList{
+    gap: 8vw;
+    padding: 5vw;
+    padding-bottom: 10vw;     
+}
+
+.patternItem {
+    width: 30vw;
+}
+
+.patternItem p {
+    font-size: 4.5vw;
+}
+
+.etc{
+    font-size: 3vw;
+}
+
+
+#exampleProducts {
+    padding-top: 20vw;
+}
+.exampleText{
+    font-size: 5vw;
+    margin-bottom: 8vw;
+}
+
+.productsList{
+    gap: 4vw;
+    padding: 5vw;
+}
+.productItem {
+    width: 34vw;        /* 揃えたい横幅 */
+  height: 40vw;       /* 揃えたい高さ */
+  overflow: hidden;
+}
+
+.andMore {
+    font-size: 4vw;
+    margin-top: 5vw;
+    margin-bottom: 20vw;   
 }
 
 
