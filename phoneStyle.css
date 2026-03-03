@@ -197,13 +197,14 @@ header li{
 }
 
 .navi-links li{
-    font-size: 2.3vw;
+    font-size: 3vw;
+    margin: 1.5vw 0;
 }
 
 header li.scroll {
   display: block;
-  font-size: /*11cqi*/3.4vw;
-  margin-left: 0;
+  font-size: /*11cqi*/5vw;
+  margin: 0;
 }
 
 .topTrigger {
