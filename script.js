@@ -41,6 +41,15 @@ new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.links').forEach(el => {listObserver.observe(el)});
 
+//スマホヘッダーリスト展開
+const phoneHeader = document.querySelector('.navi-links');
+const phoneList = document.querySelector('.phoneList');
+
+phoneHeader.addEventListener('click', () => {
+phoneList.classList.toggle('touchHeader');
+console.log("ヘッダークリック")
+})
+
 
 //最初の日付
 const welcomeTrigger = document.querySelector('.welcomeTrigger');

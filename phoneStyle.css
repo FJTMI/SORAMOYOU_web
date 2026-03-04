@@ -171,6 +171,7 @@ header.scroll .header-logo{
     width: 80%;
 }
 
+
 header a{
     width: 25vw;
 }
@@ -182,7 +183,6 @@ header li.phoneNavi{
 header li{
   display: none;
 }
-
 
 .navi-links {
     /*display: flex;*/
@@ -203,9 +203,37 @@ header li{
 
 header li.scroll {
   display: block;
-  font-size: /*11cqi*/5vw;
+  font-size: /*11cqi*/6.5vw;
   margin: 0;
+  margin-left: -3vw;
 }
+
+
+.phoneList.touchHeader{
+    display: none;
+}
+
+.phoneList{
+    position: fixed;    /* 画面に対して固定 */
+    top: 16vw;
+     background-color: rgba(245, 245, 245, 0.9);
+  backdrop-filter: blur(5px);
+    display: block;
+    margin: 0;
+    margin-left: 0vw;
+    padding-left: 0;
+    width: 97vw;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.phoneList li{
+    list-style-type: none;   
+    font-size: 3vw;
+    margin: 2.5vw 0;
+    margin-left: 4vw;
+}
+
 
 .topTrigger {
   bottom: 1.5vw;
