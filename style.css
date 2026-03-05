@@ -197,10 +197,16 @@ display: none;
 
 /* ヘッダー */
 
-header {
-  position: fixed;    /* 画面に対して固定 */
+.phoneHeader{
+    position: fixed;    /* 画面に対して固定 */
   top: 0;
   left: 0;
+}
+
+header {
+  /*position: fixed;    /* 画面に対して固定 */
+  /*top: 0;
+  left: 0;*/
   width: 15vw;/*100*/
   container-type: inline-size;
   z-index: 100;
@@ -237,7 +243,7 @@ header.scroll {
 header li {
   list-style-type: none;    
   margin-bottom: /*13cqi*/1.75vw;
-  font-size: /*8.5cqi*/1.4vw;
+  font-size: /*8.5cqi*/1.5vw;
   transition: all 0.2s ease;
 }
 

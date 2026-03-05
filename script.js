@@ -2,6 +2,7 @@ const headerLogo = document.querySelector('header');
 const homeSection = document.querySelector('#makeSORAMOYOU');
 const topTrigger =document.querySelector('.topTrigger');
 const phoneNavis = document.querySelectorAll('.navi-links li');
+const phoneList = document.querySelector('.phoneList');
 
 //スクロールでヘッダーロゴサイズ変える
 new IntersectionObserver((entries) => {
@@ -9,11 +10,13 @@ new IntersectionObserver((entries) => {
     if (!entry.isIntersecting) {
       headerLogo.classList.add('scroll');
       topTrigger.classList.add('scroll');
+      phoneList.classList.add('scroll');
       phoneNavis.forEach(li => {li.classList.remove('phoneNavi');});
     } else {
       // 1番上の要素が少しでも見えたら（トップに戻ったら）クラスを外す
       headerLogo.classList.remove('scroll');
       topTrigger.classList.remove('scroll');
+      phoneList.classList.remove('scroll');
       phoneNavis.forEach(li => {li.classList.add('phoneNavi');});
     }
     });
@@ -43,11 +46,9 @@ document.querySelectorAll('.links').forEach(el => {listObserver.observe(el)});
 
 //スマホヘッダーリスト展開
 const phoneHeader = document.querySelector('.navi-links');
-const phoneList = document.querySelector('.phoneList');
 
 phoneHeader.addEventListener('click', () => {
 phoneList.classList.toggle('touchHeader');
-console.log("ヘッダークリック")
 })
 
 
