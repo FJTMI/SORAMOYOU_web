@@ -345,10 +345,23 @@ margin-left: auto;
     padding-top: 30vw;
 }
 
+.layerImage {
+    width: 75vw;
+}
+
+.layerText{
+    font-size: 2.5vw;
+}
+
+.arrow{
+    margin: 5vw;
+  font-size: 5vw;
+}
+
 .howToLookImage {
     width: 90vw;
     height: auto;
-    margin-left: -2vw;
+    margin-left: -4vw;
 }
 
 .listTitle {

@@ -285,7 +285,7 @@ main {
     width: 70vw;
     /*max-width: 1000px;*/
     margin: 0 auto;
-margin-left: 16vw;
+margin-left: 17vw;
     
 }
 
@@ -462,14 +462,37 @@ margin-left: 16vw;
     margin: 0;
 }
 
+/*見方*/
+
 #howToLook {
     padding-top: 12.5vw;
+}
+
+.layerImage {
+    width: 40vw;
+    height: auto;
+}
+
+.layerText{
+    display: flex;
+    font-size: 1.5vw;
+    align-self: flex-start;
+    text-align: left;
+    justify-content: center;
+}
+
+.arrow{
+    display: block;
+    margin: 3vw;
+  font-weight: 100;
+  font-size: 3vw;
+  font-family: serif;
 }
 
 .howToLookImage {
     width: 52.5vw;
     height: auto;
-    margin-left: -2vw;
+    margin-left: -5vw;
 }
 
 .listTitle {
