@@ -315,6 +315,33 @@ margin-left: auto;
     padding: 1.5vw;
 }
 
+.changeLayer {
+    width: 65%;
+    margin-top: 1vw;
+    margin-bottom: 5vw;
+    /*padding: 1vw;*/
+    /*border-radius: 20px;*/
+    overflow: auto;
+}
+.changeLayer.open{
+    width: 90%;
+    bottom: 1vw;
+}
+
+.changeLayerBanner {
+    margin-left: 4vw;
+    font-size: 3.75vw;
+    padding: 1.5vw;
+}
+
+.changeLayerOpen div{
+    margin-top: 0vw;
+}
+
+.changeLayerOpen div label{
+    font-size: 3vw;
+}
+
 /* whatIsSORAMOYOU */
 .CatchPhrase {
     padding-top: 25vw;

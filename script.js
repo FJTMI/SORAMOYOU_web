@@ -95,6 +95,25 @@ window.addEventListener('click', (e) => {
   }
 });
 
+//選択肢隠し  layerver
+const changeLayerTrigger = document.querySelector('.changeLayerBanner');
+const changeLayerOpen = document.querySelector('.changeLayerOpen');
+const changeLayer = document.querySelector('.changeLayer');
+
+
+changeLayerTrigger.addEventListener('click', () => {
+    changeLayerOpen.classList.toggle('open');
+    changeLayer.classList.toggle('open');
+  });
+
+window.addEventListener('click', (e) => {
+  // クリックされた要素が、展開している要素（changeDate/changeList）の中に含まれていない場合
+  if (!changeLayerOpen.contains(e.target) && !changeLayer.contains(e.target)) {
+    changeLayerOpen.classList.remove('open');
+    changeLayer.classList.remove('open');
+  }
+});
+
 //オフライン時
 const offImg = document.querySelector('.offImg');
 const offText = document.querySelector('.offText');
@@ -110,6 +129,7 @@ function updateOnlineStatus() {
     whenText.classList.remove('offline'); 
     welcome.classList.remove('offline'); 
     changeList.classList.remove('offline'); 
+    changeLayer.classList.remove('offline'); 
     console.log("オン")
   } else {
     //banner.classList.remove('hidden'); // オフラインなら表示
@@ -119,6 +139,7 @@ function updateOnlineStatus() {
     whenText.classList.add('offline'); 
     welcome.classList.add('offline'); 
     changeList.classList.add('offline'); 
+    changeLayer.classList.add('offline'); 
     console.log("オフ")
   }
 }

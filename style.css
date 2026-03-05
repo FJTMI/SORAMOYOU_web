@@ -429,6 +429,66 @@ margin-left: 17vw;
 }
 
 
+.changeLayer {
+    width: 45%;
+    margin-top: 4vw;
+    margin-bottom: 0vw;
+    padding: 1vw;
+    /*border: 1px solid black;*/
+    border-radius: 20px;
+    border: 1px solid rgb(215, 217, 222);
+    background-color: rgba(255, 255, 255, 0.75);
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 110;
+}
+.changeLayer.open{
+    width: 70%;
+    position: -webkit-sticky; /* Safari対応 */
+    position: sticky;
+    bottom: 1vw;
+}
+.changeLayer.offline{
+    display: none;
+}
+
+.changeLayerBanner {
+    margin: 0;
+    margin-left: 2vw;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.4vw;
+    text-align: left;
+}
+
+.changeLayerOpen {
+    overflow: hidden;
+     max-height: 0;
+  /*opacity: 0;*/
+  /*pointer-events: none; /* 閉じている間はクリック不可に */
+  margin-top: 0;
+  margin-bottom: 0;
+  transition: all 0.5s ease-in; /* アニメーションの速度 */
+}
+
+.changeLayerOpen.open {
+    display: flex;           
+   max-height: 800px; /* 中身に合わせて十分な高さを指定 */
+  opacity: 1;
+  margin: 1vw;
+  justify-content: center;
+}
+
+.changeLayerOpen div{
+    margin-top: 0.5vw;
+}
+
+.changeLayerOpen div label{
+    font-size: 1.5vw;
+    background-color: rgb(255, 255, 255);
+}
+
+
 
 
 /* whatIsSORAMOYOU */

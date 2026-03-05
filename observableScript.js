@@ -15,6 +15,9 @@ new Runtime().module(define, name => {
 
     if (name === "viewof placeSelect") return new Inspector(document.querySelector("#observablehq-viewof-placeSelect-97ea0d29"));
 
+    if (name === "viewof layerSelect") return new Inspector(document.querySelector("#observablehq-viewof-layerSelect-ea36a6c5"));
+
+
   return ["viewof downloadButton",
     "targetYears",
     "viewof selectDay",
@@ -24,3 +27,4 @@ new Runtime().module(define, name => {
     "githubData",
 "viewof mixBlendModeSelect"].includes(name);
 });
+
